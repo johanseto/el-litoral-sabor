@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Litoral del Sabor - Restaurante</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fcfcfc;
+        }
+        h1, h2, h3 {
+            color: #5a2e15; /* Color marrón del logo */
+        }
+        
+        /* Encabezado / Banner Principal */
+        .hero {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px 20px;
+            border-bottom: 5px solid #00938f; /* Verde azulado del mar */
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 10px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 15px 0 5px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #e65100; /* Naranja del atardecer del logo */
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Botón de WhatsApp Gigante */
+        .whatsapp-btn-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366; /* Color oficial de WhatsApp */
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 20px 40px;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+            transition: transform 0.3s ease, background-color 0.3s;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1ebe57;
+            transform: scale(1.05);
+        }
+
+        /* Secciones de Contenido */
+        .section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .section-alt {
+            background-color: #f1f8f7;
+        }
+
+        /* Menú (Tarjetas) */
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .menu-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .menu-item h3 {
+            margin-top: 0;
+            color: #00938f;
+        }
+        .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #e65100;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #5a2e15;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección del Banner Principal -->
+    <header class="hero">
+        <!-- Aquí se utiliza la imagen proporcionada -->
+        <img src="litoral_sabor.jpeg" alt="Logo de El Litoral del Sabor">
+        
+        <div class="whatsapp-btn-container">
+            <!-- Enlace directo al número de WhatsApp -->
+            <a href="https://wa.me/573164820424" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                💬 Haz tu pedido por WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="section">
+        <h2>Bienvenidos a El Litoral del Sabor</h2>
+        <p>Sabores que te conectan con el mar. Disfruta de la mejor gastronomía costera sin salir de la ciudad. Preparamos cada plato con ingredientes frescos, pasión y esa sazón tradicional que te hará sentir la brisa del mar en cada bocado.</p>
+    </section>
+
+    <!-- Sección del Menú Destacado -->
+    <section class="section section-alt">
+        <h2>Nuestras Especialidades</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>Cazuela de Mariscos</h3>
+                <p>Una mezcla perfecta de frutos del mar en una base cremosa con leche de coco, acompañada de arroz y patacón.</p>
+                <p class="price">$ 35.000</p>
+            </div>
+            <div class="menu-item">
+                <h3>Pescado Frito</h3>
+                <p>Mojarra roja frita y crujiente, servida con arroz con coco, ensalada fresca y patacones al ajillo.</p>
+                <p class="price">$ 28.000</p>
+            </div>
+            <div class="menu-item">
+                <h3>Ceviche Litoral</h3>
+                <p>Camarones frescos marinados en jugo de limón, cebolla roja, cilantro y nuestro toque secreto de la casa.</p>
+                <p class="price">$ 22.000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p><strong>El Litoral del Sabor</strong></p>
+        <p>📞 +57 316 4820424 | 📍 Manizales, Caldas, Colombia</p>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
