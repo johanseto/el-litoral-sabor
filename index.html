@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cargando restaurante...</title>
+    <title>Loading restaurant...</title>
     <style>
         :root {
             --primary: #5a2e15;
@@ -37,7 +37,7 @@
         <h1 id="restaurant-name"></h1>
         <p id="restaurant-tagline"></p>
         <div class="whatsapp-btn-container">
-            <a id="whatsapp-link" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">💬 Haz tu pedido por WhatsApp</a>
+            <a id="whatsapp-link" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">💬 Order on WhatsApp</a>
         </div>
     </header>
 
@@ -54,7 +54,7 @@
     <footer>
         <p><strong id="footer-name"></strong></p>
         <p>📞 <span id="footer-phone"></span> | 📍 <span id="footer-address"></span></p>
-        <p>&copy; <span id="footer-year"></span> Todos los derechos reservados.</p>
+        <p>&copy; <span id="footer-year"></span> All rights reserved.</p>
     </footer>
 
     <script>
@@ -65,7 +65,7 @@
                 fetch('config.json'),
                 fetch('menu.json')
             ]);
-            if (!configResponse.ok || !menuResponse.ok) throw new Error('No se pudo cargar la configuración.');
+            if (!configResponse.ok || !menuResponse.ok) throw new Error('Unable to load the restaurant configuration.');
             const config = await configResponse.json();
             const menu = await menuResponse.json();
 
@@ -108,7 +108,7 @@
         }
 
         loadRestaurant().catch(error => {
-            document.body.innerHTML = `<main class="section"><h1 class="error">No se pudo cargar el restaurante</h1><p>${error.message}</p></main>`;
+            document.body.innerHTML = `<main class="section"><h1 class="error">Unable to load the restaurant</h1><p>${error.message}</p></main>`;
         });
     </script>
 </body>
