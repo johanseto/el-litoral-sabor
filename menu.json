@@ -1,0 +1,23 @@
+{
+  "title": "Nuestras Especialidades",
+  "items": [
+    {
+      "name": "Cazuela de Mariscos",
+      "description": "Frutos del mar en una base cremosa con leche de coco, acompañada de arroz y patacón.",
+      "price": "$ 35.000",
+      "image": "menues/cazuela.jpg"
+    },
+    {
+      "name": "Pescado Frito",
+      "description": "Mojarra roja frita y crujiente, servida con arroz con coco, ensalada y patacones.",
+      "price": "$ 28.000",
+      "image": "menues/pescado.jpg"
+    },
+    {
+      "name": "Ceviche Litoral",
+      "description": "Camarones frescos marinados en limón, cebolla roja, cilantro y nuestro toque secreto.",
+      "price": "$ 22.000",
+      "image": "menues/ceviche.jpg"
+    }
+  ]
+}
