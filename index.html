@@ -91,11 +91,18 @@
             menu.items.forEach(item => {
                 const card = document.createElement('article');
                 card.className = 'menu-item';
-                card.innerHTML = `
-                    <img src="${item.image}" alt="${item.name}" loading="lazy">
-                    <h3>${item.name}</h3>
-                    <p>${item.description}</p>
-                    <p class="price">${item.price}</p>`;
+                const image = document.createElement('img');
+                image.src = item.image;
+                image.alt = item.name;
+                image.loading = 'lazy';
+                const name = document.createElement('h3');
+                name.textContent = item.name;
+                const description = document.createElement('p');
+                description.textContent = item.description;
+                const price = document.createElement('p');
+                price.className = 'price';
+                price.textContent = item.price;
+                card.append(image, name, description, price);
                 grid.appendChild(card);
             });
         }
