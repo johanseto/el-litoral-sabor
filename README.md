@@ -2,6 +2,7 @@
 
 Configurable static site template for quickly creating a restaurant page.
 
+
 ## Customization
 
 1. Edit `config.json` to change the name, logo, WhatsApp number, address, and site copy.
