@@ -10,4 +10,5 @@ Configurable static site template for quickly creating a restaurant page.
 3. Add the dish images to the `menues/` directory (for example, `cazuela.jpg`, `pescado.jpg`, and `ceviche.jpg`).
 4. Update `config.json` so `logo` points to the image you want to display as the main image.
 
+
 The `whatsapp` value must include the country code without spaces or symbols. The page does not require a server and works directly on GitHub Pages. To test it locally, serve the directory with any HTTP server so the browser can read the JSON files.
